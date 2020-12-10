@@ -1,0 +1,195 @@
+,Coefficients
+month,-0.0
+budget,-43505959.092255406
+runtime,-28362.029558000057
+director_median_vote,5247139.59562227
+director_median_revenue,25288005.868004512
+Top3cast_median_revenue,59413975.08989291
+trend_average,1232142.8444474193
+Director_Number,-665587.835620455
+country_count,-2986542.7041494367
+genre_count,-1384896.436825339
+company_count,-3467124.385122055
+cast_count,8032503.173416856
+awardedcast,-909880.3674925262
+book,3269940.1394240735
+isenglish,-515754.4508366956
+country_Argentina,103338.6411745015
+country_Australia,-486067.92378218577
+country_Austria,1005868.0283323599
+country_Bahamas,140075.12815100144
+country_Belarus,482092.51150057605
+country_Belgium,52519.19230708971
+country_Brazil,0.0
+country_Bulgaria,322729.4538890885
+country_Canada,-1072086.3775941988
+country_Chile,-985647.0970434974
+country_China,73833.36765097099
+country_Costa Rica,-0.0
+country_Croatia,891704.690482709
+country_Czech Republic,-393938.8926634152
+country_Denmark,466760.31030085543
+country_Ecuador,288496.30778635794
+country_Egypt,77126.52683535521
+country_Estonia,-59469.363055459115
+country_Finland,278002.8138623001
+country_France,0.0
+country_Germany,-1004242.5832396003
+country_Gibraltar,539480.235680143
+country_Greece,0.0
+country_Guatemala,0.0
+country_Hong Kong,-103205.24781193312
+country_Hungary,-142758.49544043667
+country_Iceland,0.0
+country_India,-397040.1637447046
+country_Iran,-273365.91464601835
+country_Ireland,133837.8561678724
+country_Israel,-1198705.0445357729
+country_Italy,-929252.772925023
+country_Jamaica,0.0
+country_Japan,-487518.2102514091
+country_Kazakhstan,377052.54843022936
+country_Latvia,0.0
+country_Liechtenstein,-280942.28769915237
+country_Lithuania,-153847.1339154828
+country_Luxembourg,-0.0
+country_Macedonia,0.0
+country_Malaysia,-117611.12789786924
+country_Mali,-481047.8647273679
+country_Malta,0.0
+country_Mexico,696682.6910924275
+country_Monaco,159628.6095651955
+country_Morocco,-195344.69770665254
+country_Namibia,-206926.95373762192
+country_Netherlands,-1232887.4939441471
+country_New Zealand,0.0
+country_Norway,11677.066835207283
+country_Pakistan,-308567.41619648784
+country_Peru,-212148.11367494677
+country_Philippines,0.0
+country_Poland,147633.99343420862
+country_Portugal,-0.0
+country_Puerto Rico,80592.40649147384
+country_Qatar,545727.5988043316
+country_Romania,-0.0
+country_Russia,-328183.8050463366
+country_Serbia,-573961.930522132
+country_Singapore,-1025694.4848282085
+country_Slovenia,-203672.66984385613
+country_South Africa,-1922063.2373544602
+country_South Korea,-63200.352380236094
+country_Spain,-602781.8993679159
+country_Sweden,-744789.1851565838
+country_Switzerland,-1126.473004712832
+country_Taiwan,0.0
+country_Thailand,-622561.7110544981
+country_Tunisia,0.0
+country_Turkey,-800435.1256461425
+country_Ukraine,504879.0369031833
+country_United Arab Emirates,123503.36013698067
+country_United Kingdom,424898.6661836844
+country_United States of America,-1187492.4621977976
+country_Uruguay,-0.0
+genre_Action,-1158257.5855289605
+genre_Animation,-1070301.0880837315
+genre_Comedy,-2457331.30971558
+genre_Crime,-132028.87918174
+genre_Documentary,-0.0
+genre_Drama,-1498138.6748121069
+genre_Family,-0.0
+genre_Fantasy,-35500.29910611032
+genre_Foreign,46166.2011552145
+genre_History,274873.3940598351
+genre_Horror,-1212605.9485998077
+genre_Music,0.0
+genre_Mystery,1029392.9792075654
+genre_Romance,-850415.8419763499
+genre_Science Fiction,-230193.4152705379
+genre_TV Movie,-886424.7888574798
+genre_Thriller,-1078014.147725485
+genre_War,176100.121180547
+genre_Western,-152098.56854565206
+company_Anonymous Content,0.0
+company_BBC Films,556291.2150789532
+company_Blumhouse Productions,441524.72287829494
+company_Canal+,521730.9092495688
+company_Castle Rock Entertainment,416117.48407340224
+company_Columbia Pictures,417592.2128475027
+company_Columbia Pictures Corporation,0.0
+company_Constantin Film Produktion,-538933.1184454245
+company_DC Comics,-0.0
+company_Davis Entertainment,-146373.42719266217
+company_Dimension Films,-768770.887939632
+company_DreamWorks Animation,101255.85469172765
+company_DreamWorks SKG,-199208.0989461487
+company_Dune Entertainment,-341331.8515567363
+company_Emmett/Furla Films,361507.88102600817
+company_Epsilon Motion Pictures,-396231.0990550701
+company_EuropaCorp,-390656.4094142775
+company_Fine Line Features,159544.45470025137
+company_Focus Features,-663121.5481884121
+company_Fox 2000 Pictures,-146632.83878989003
+company_Fox Searchlight Pictures,300288.85402105324
+company_France 2 Cinéma,-937410.5152291418
+company_Happy Madison Productions,-257212.96350945332
+company_Hollywood Pictures,-552084.8209518215
+company_Imagine Entertainment,-0.0
+company_Ingenious Film Partners,-986532.7248339191
+company_Interscope Communications,216833.30723177994
+company_Jerry Bruckheimer Films,-961229.2164769424
+company_Lakeshore Entertainment,-327110.2071570309
+company_Lions Gate Films,-632709.2329298905
+company_Lionsgate,358258.4738718629
+company_Lucasfilm,1540365.9761640043
+company_Medusa Film,-685692.5209408397
+company_Metro-Goldwyn-Mayer (MGM),230221.49244669254
+company_Millennium Films,-0.0
+company_Miramax Films,792961.9995987912
+company_Morgan Creek Productions,-965960.5867644115
+company_New Line Cinema,162524.8990066664
+company_New Regency Pictures,167268.58965161053
+company_New World Pictures,1176165.5107645278
+company_Nu Image Films,1873612.801314191
+company_Original Film,0.0
+company_Orion Pictures,-590225.0433510895
+company_Paramount Pictures,2321080.6676475173
+company_PolyGram Filmed Entertainment,463981.7877735642
+company_RKO Radio Pictures,-319067.5215684527
+company_Regency Enterprises,1014261.9132821275
+company_Relativity Media,217867.94483043134
+company_Revolution Studios,-224453.28808364336
+company_Scott Free Productions,-893366.4256282222
+company_Scott Rudin Productions,-116681.90281561913
+company_Screen Gems,-371933.9485090912
+company_Silver Pictures,-133253.29377776704
+company_Spyglass Entertainment,390741.5927982211
+company_Studio Babelsberg,-929296.6950857831
+company_StudioCanal,912543.591191353
+company_Summit Entertainment,-152798.82606458932
+company_TF1 Films Production,-482056.91168425477
+company_TSG Entertainment,34305.616942635665
+company_The Weinstein Company,-1929977.1278359895
+company_Touchstone Pictures,281920.2684075102
+company_TriStar Pictures,169380.55908954286
+company_Twentieth Century Fox Film Corporation,2686848.760375424
+company_UK Film Council,-263650.47364786634
+company_United Artists,-1103795.9144039126
+company_Universal Pictures,673787.4364208874
+company_Village Roadshow Pictures,-938860.9399209043
+company_Walden Media,232102.49538579484
+company_Walt Disney Pictures,-1208983.5700253902
+company_Walt Disney Productions,174183.68914513124
+company_Warner Bros.,-281850.7823684243
+company_Working Title Films,-1206887.5485312007
+company_others,0.0
+month_1.0,-3709079.144180264
+month_2.0,-4154293.4948002854
+month_3.0,-4850213.240053168
+month_4.0,-2490311.460223187
+month_5.0,-483020.3386594362
+month_7.0,-2429106.0171104427
+month_8.0,-4082199.241385245
+month_9.0,-5062789.340056393
+month_10.0,-4593877.695861775
+month_11.0,-4021630.867650626
+month_12.0,-3046744.5349527667

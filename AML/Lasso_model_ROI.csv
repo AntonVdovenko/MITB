@@ -1,0 +1,195 @@
+,Coefficients
+month,0.0
+budget,-0.7948642384695773
+runtime,0.0
+director_median_vote,0.3308061482840443
+director_median_revenue,0.6150174625215495
+Top3cast_median_revenue,1.039021260087889
+trend_average,-0.0
+Director_Number,-0.0
+country_count,-0.10610247383455176
+genre_count,-0.0
+company_count,-0.0
+cast_count,0.15987978715731335
+awardedcast,0.0
+book,0.0
+isenglish,-0.0
+country_Argentina,0.0
+country_Australia,0.0
+country_Austria,0.0
+country_Bahamas,0.0
+country_Belarus,0.0
+country_Belgium,0.0
+country_Brazil,0.03412785920109237
+country_Bulgaria,-0.0
+country_Canada,-0.0
+country_Chile,-0.0
+country_China,-0.0
+country_Costa Rica,-0.0
+country_Croatia,0.0
+country_Czech Republic,-0.0
+country_Denmark,-0.0
+country_Ecuador,0.0
+country_Egypt,0.0
+country_Estonia,-0.0
+country_Finland,-0.0
+country_France,0.0
+country_Germany,0.0
+country_Gibraltar,0.0
+country_Greece,0.0
+country_Guatemala,0.0
+country_Hong Kong,-0.0
+country_Hungary,-0.0
+country_Iceland,0.0
+country_India,-0.0
+country_Iran,-0.0
+country_Ireland,0.0
+country_Israel,0.0
+country_Italy,-0.0
+country_Jamaica,0.0
+country_Japan,-0.0
+country_Kazakhstan,0.0
+country_Latvia,0.0
+country_Liechtenstein,-0.0
+country_Lithuania,-0.0
+country_Luxembourg,-0.0
+country_Macedonia,0.0
+country_Malaysia,-0.0
+country_Mali,-0.0
+country_Malta,-0.0
+country_Mexico,0.0
+country_Monaco,-0.0
+country_Morocco,-0.0
+country_Namibia,0.0
+country_Netherlands,-0.0
+country_New Zealand,-0.0
+country_Norway,-0.0
+country_Pakistan,-0.0
+country_Peru,-0.0
+country_Philippines,0.0
+country_Poland,0.0
+country_Portugal,-0.0
+country_Puerto Rico,0.0
+country_Qatar,0.0
+country_Romania,-0.0
+country_Russia,-0.0
+country_Serbia,-0.0
+country_Singapore,-0.0
+country_Slovenia,0.0
+country_South Africa,-0.0
+country_South Korea,-0.0
+country_Spain,0.0
+country_Sweden,-0.0
+country_Switzerland,-0.0
+country_Taiwan,0.0
+country_Thailand,-0.0
+country_Tunisia,0.0
+country_Turkey,-0.0
+country_Ukraine,0.007543784096419398
+country_United Arab Emirates,-0.0
+country_United Kingdom,0.0
+country_United States of America,0.06839872370118634
+country_Uruguay,-0.0
+genre_Action,0.0
+genre_Animation,-0.0
+genre_Comedy,0.0
+genre_Crime,0.0
+genre_Documentary,0.0
+genre_Drama,0.0
+genre_Family,-0.0
+genre_Fantasy,0.0
+genre_Foreign,0.0
+genre_History,0.0
+genre_Horror,0.0
+genre_Music,0.0
+genre_Mystery,0.0
+genre_Romance,0.0
+genre_Science Fiction,0.0
+genre_TV Movie,0.0
+genre_Thriller,-0.0
+genre_War,0.0
+genre_Western,0.0
+company_Anonymous Content,-0.0
+company_BBC Films,0.0
+company_Blumhouse Productions,0.0
+company_Canal+,0.0
+company_Castle Rock Entertainment,0.03563892687816736
+company_Columbia Pictures,0.0
+company_Columbia Pictures Corporation,0.0
+company_Constantin Film Produktion,0.0
+company_DC Comics,0.005015437908248382
+company_Davis Entertainment,0.0
+company_Dimension Films,0.0
+company_DreamWorks Animation,0.0
+company_DreamWorks SKG,-0.0
+company_Dune Entertainment,-0.0
+company_Emmett/Furla Films,-0.0
+company_Epsilon Motion Pictures,0.03245448666457408
+company_EuropaCorp,0.0
+company_Fine Line Features,0.0
+company_Focus Features,-0.0
+company_Fox 2000 Pictures,0.0
+company_Fox Searchlight Pictures,-0.0
+company_France 2 Cinéma,0.0
+company_Happy Madison Productions,-0.0
+company_Hollywood Pictures,0.0
+company_Imagine Entertainment,-0.0
+company_Ingenious Film Partners,0.0
+company_Interscope Communications,0.0
+company_Jerry Bruckheimer Films,-0.0
+company_Lakeshore Entertainment,0.0
+company_Lions Gate Films,0.0
+company_Lionsgate,-0.0
+company_Lucasfilm,-0.0
+company_Medusa Film,-0.0
+company_Metro-Goldwyn-Mayer (MGM),-0.0
+company_Millennium Films,-0.0
+company_Miramax Films,0.0
+company_Morgan Creek Productions,0.0
+company_New Line Cinema,0.0
+company_New Regency Pictures,0.0
+company_New World Pictures,0.0
+company_Nu Image Films,0.0
+company_Original Film,0.0
+company_Orion Pictures,0.0
+company_Paramount Pictures,0.0
+company_PolyGram Filmed Entertainment,0.0
+company_RKO Radio Pictures,-0.0
+company_Regency Enterprises,0.0
+company_Relativity Media,-0.0
+company_Revolution Studios,-0.0
+company_Scott Free Productions,-0.0
+company_Scott Rudin Productions,-0.0
+company_Screen Gems,0.0
+company_Silver Pictures,-0.0
+company_Spyglass Entertainment,-0.0
+company_Studio Babelsberg,-0.0
+company_StudioCanal,0.0
+company_Summit Entertainment,-0.0
+company_TF1 Films Production,0.0
+company_TSG Entertainment,0.0
+company_The Weinstein Company,-0.0
+company_Touchstone Pictures,0.0
+company_TriStar Pictures,0.0
+company_Twentieth Century Fox Film Corporation,0.014798275178993934
+company_UK Film Council,0.0
+company_United Artists,-0.0
+company_Universal Pictures,0.0
+company_Village Roadshow Pictures,0.0
+company_Walden Media,-0.0
+company_Walt Disney Pictures,-0.0
+company_Walt Disney Productions,-0.0
+company_Warner Bros.,-0.0
+company_Working Title Films,0.0
+company_others,0.0
+month_1.0,-0.0
+month_2.0,-0.0
+month_3.0,-0.0
+month_4.0,-0.0
+month_5.0,-0.0
+month_7.0,0.03647524191259534
+month_8.0,-0.0
+month_9.0,-0.045958506851825016
+month_10.0,-0.0
+month_11.0,0.0
+month_12.0,0.0
