@@ -1,0 +1,1 @@
+# Repository with coding projects which were made during MITB program 
