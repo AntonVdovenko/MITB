@@ -1,0 +1,13 @@
+﻿Pclass,Survived,Sex,Freq
+1,No,Male,77
+2,No,Male,91
+3,No,Male,300
+1,No,Female,3
+2,No,Female,6
+3,No,Female,72
+1,Yes,Female,91
+2,Yes,Female,70
+3,Yes,Female,72
+1,Yes,Male,45
+2,Yes,Male,17
+3,Yes,Male,47

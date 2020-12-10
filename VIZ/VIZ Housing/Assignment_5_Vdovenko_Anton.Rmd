@@ -1,0 +1,202 @@
+---
+title: "Assignment_5"
+author: "Vdovenko_Anton"
+date: "8/6/2020"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Purpose of Visualisation
+
+Explore California housing market dataset, provide comprehensive map visualization.
+
+# Visualisation Step-by Step
+
+## Load Libraries
+
+```{r echo=TRUE}
+library(car)
+library(tidyverse)
+library(corrplot)
+library(psych)
+library(ggmap)
+```
+
+
+## Data upload
+```{r}
+df = read_csv("housing.csv")
+show(df)
+```
+
+## Missing Values
+
+First lets be mindfull of data restrictions we may have. As can be seen above we have missing values in our data lets check what they are.
+
+Total number of missing values in our data
+```{r}
+sum(is.na(df))
+```
+Missing values by columns
+```{r}
+map(df, ~sum(is.na(.)))
+  
+```
+
+Lets replace misisng values in total_bedrooms columns with median
+```{r}
+df = df %>% 
+  mutate_at(vars(total_bedrooms), ~ifelse(is.na(.), median(., na.rm = TRUE), .))
+
+df %>% summarise(
+  Age = sum(is.na(total_bedrooms))
+)
+```
+
+## Comprehensive Data Exploration
+```{r}
+
+pairs.panels(df[,3:9], 
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB",
+             density = TRUE,  # show density plots
+             ellipses = TRUE # show correlation ellipses
+             )
+```
+
+From graph we can see our data distributions, correlations and scatter plots with best fitted lines
+
+## Data Distributions
+
+```{r}
+ggplot(gather(df[1:9]), aes(value)) + 
+    geom_histogram(bins = 50, color="blue") + 
+    theme_minimal()+
+    facet_wrap(~key, scales = 'free_x')
+```
+
+Lets look more closely to data dustributions **Households/Population/Total_Bedrooms/Total_Rooms** looks like *normal* right skewed distributions, while **Housing_Median_Age** and **Median_House_Value** resembles *uniform* distribution with extreme right outliers. *Median_Income* looks like *normal* rigth skewed distribution with extreme right outliers. And just by looking on *Latittude/Longtitude* distributions we can conclude that we will see two very dense populated area on California map.
+
+## Corr Plots
+
+
+```{r}
+df.cor <- cor(df[1:9])
+corrplot.mixed(df.cor, 
+               lower = "ellipse", 
+               upper = "number",
+               tl.pos = "lt",
+               diag = "l", 
+               tl.col = "black")
+```
+
+Now lets focus our attention at correlations. The only suprise is that correlation between median income and median house value is *just* **69%**, we could expect more than that.
+
+
+```{r}
+df.sig = cor.mtest(df.cor, conf.level= .95)
+corrplot(df.cor,
+         method = "number",
+         type = "lower",
+         diag = FALSE,
+         tl.col = "black",
+         tl.srt = 45,
+         p.mat = df.sig$p,
+         sig.level = .01)
+```
+
+This graph shows only statistical significant correlations with alpha 0.01, which is prety strict, the median income/median house value correlation is statisticaly significant, we will look look more closely to the relation of this features on the next graph.
+
+## Scatter Plot (Median Income VS Median House Value) by Ocean Proximity
+
+
+```{r}
+scatterplot(median_house_value ~ median_income | ocean_proximity, data=df,
+   ylab="Median_House_Value", xlab="Median_Income",smooth = FALSE, grid = FALSE, frame = FALSE,ellipse = FALSE)
+  
+```
+
+The graph looks a bit messy but we still can infer some interesting insights. First of all we can see how based on ocean proximity our values have different distributions and hence different regression lines. Also we can clearly see data artifiact, our house prices have price cap as horizontal line on the graph, that is due we have median house prices of houses based on certain areas.
+
+
+## Density Plot
+
+```{r}
+ggplot(df,aes(x = longitude, y = latitude)) +
+  geom_point(aes(size = population), alpha = 0.1, color = "purple") +
+  xlab("Longitude") +
+  ylab("Latitude") +
+  ggtitle("Density of Population") +
+  labs(size = "Population")+
+  theme_minimal()
+
+```
+
+As was mentioned on distributions graph Longtitude and Latititude had two peaks, and here we can see that exactly two areas if we split plot in half by diagonal, have high density of population.
+
+## California Map
+
+```{r}
+get_local_spot <-  get_map("California", maptype = "roadmap", zoom = 6)
+ggmap(get_local_spot) + 
+  geom_point(data = df, aes(x = longitude, y = latitude, size = population, color = median_house_value), alpha = 0.3)+
+  scale_color_distiller(palette = "Paired")+
+    theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      rect = element_blank(),
+      axis.title.y=element_blank(),
+      axis.title.x=element_blank())
+```
+
+This grap shows us overall house market state at California. No suprises here we can see a lot of dense populated and high price areas are near ocean. Next graph will help us draw more insights. 
+
+## California Map by Ocean Proximity
+
+```{r}
+get_local_spot <-  get_map("California", maptype = "satellite", zoom = 6)
+ggmap(get_local_spot) + 
+  geom_point(data = df, aes(x = longitude, y = latitude, size = population, color = median_house_value), alpha = 0.4)+
+  scale_color_distiller(palette = "Paired")+
+    theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      rect = element_blank(),
+      axis.title.y=element_blank(),
+      axis.title.x=element_blank())+
+      facet_wrap(~ocean_proximity)
+
+```
+
+* **<1H Ocean** - Dense popupulated area with both high and low price houses.
+
+* **Inland** - Zone with most population in general and houses wich prices are rarely above midle price range, most are in low price spectrum.
+
+* **Island** - Low dense populated area with house prices at high price range.
+
+* **Near Bay** - Extremly dense populated area with mostly high price range houses.
+
+* **Near Ocean** - High dense populated area with mostly high prices houses except one interesting outlier at the top of the map, despite high density and ocean proximity all houses at that part are low-priced, reasons can be bad infrastructure issues,mountian area and hence no simple acesses to beaches, or no beaches at all.
+
+
+# Conclusion
+
+Through the series of visualisations we have learned about California housing sitation, though this journey could be enhanced by adding more factors which would explain house pricing, I still hope that this work provides valuable insights to the readears.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
