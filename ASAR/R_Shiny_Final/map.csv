@@ -1,0 +1,93 @@
+station,lat,lon,level
+Jurong (West),1.3455,103.6806,High_rain
+Khatib,1.4173,103.8249,High_rain
+Clementi,1.3337,103.7768,High_rain
+Tengah,1.3858,103.7114,High_rain
+Sembawang,1.4252,103.8202,High_rain
+Seletar,1.4166,103.8654,High_rain
+Kent Ridge,1.2923,103.7815,High_rain
+Choa Chu Kang (West),1.3746,103.6938,High_rain
+Kranji Reservoir,1.4387,103.7363,High_rain
+Jurong Pier,1.3081,103.71,High_rain
+Admiralty West,1.4582,103.7953,High_rain
+Macritchie Reservoir,1.3417,103.8338,High_rain
+Ulu Pandan,1.3329,103.7556,High_rain
+Mandai,1.4036,103.7898,High_rain
+Choa Chu Kang (Central),1.3819,103.7386,High_rain
+Bukit Panjang,1.3824,103.7603,High_rain
+Upper Peirce Reservoir,1.37,103.805,High_rain
+Lower Peirce Reservoir,1.3701,103.8271,High_rain
+Newton,1.3106,103.8365,Mid_rain
+Admiralty,1.4439,103.7854,Mid_rain
+Tai Seng,1.3399,103.8878,Mid_rain
+Ang Mo Kio,1.3764,103.8492,Mid_rain
+Paya Lebar,1.3524,103.9007,Mid_rain
+Whampoa,1.3214,103.8577,Mid_rain
+Tuas West,1.3247,103.6351,Mid_rain
+Lim Chu Kang,1.4385,103.7013,Mid_rain
+Buangkok,1.3837,103.886,Mid_rain
+Buo Vista,1.2841,103.7886,Mid_rain
+Tuas,1.3199,103.6616,Mid_rain
+Bukit Timah,1.3191,103.8191,Mid_rain
+Queenstown,1.2937,103.8125,Mid_rain
+Botanic Garden,1.3087,103.818,Mid_rain
+Serangoon,1.3382,103.8657,Mid_rain
+Toa Payoh,1.3415,103.8519,Mid_rain
+Yishun,1.4301,103.8308,Mid_rain
+Upper Thomson,1.3416,103.8106,Mid_rain
+Changi,1.3678,103.9826,Low_rain
+Mari Barrage,1.2799,103.8703,Low_rain
+Pulau Ubin,1.4168,103.9673,Low_rain
+Sentosa Island,1.25,103.8279,Low_rain
+Tuas South,1.2938,103.6184,Low_rain
+East Coast Parkway,1.3134,103.9619,Low_rain
+Pasir Panjang,1.281,103.754,Low_rain
+Jurong Island,1.2542,103.6741,Low_rain
+Marine Parade,1.3065,103.9107,Low_rain
+Simei,1.3437,103.9444,Low_rain
+Chai Chee,1.3277,103.9203,Low_rain
+Pasir Ris (Central),1.3679,103.9489,Low_rain
+Somerset (Road),1.3004,103.8372,Low_rain
+Tanjong Katong,1.307,103.8907,Low_rain
+Nicoll Highway,1.3011,103.8666,Low_rain
+Pasir Ris (West),1.3863,103.9412,Low_rain
+Dhoby Ghaut,1.2994,103.8461,Low_rain
+Punggol,1.4029,103.9092,Low_rain
+Tengah,1.3858,103.7114,High_temp
+Sembawang,1.4252,103.8202,High_temp
+Seletar,1.4166,103.8654,High_temp
+East Coast Parkway,1.3134,103.9619,High_temp
+Pasir Panjang,1.281,103.754,High_temp
+Jurong Island,1.2542,103.6741,High_temp
+Paya Lebar,1.3524,103.9007,High_temp
+Jurong (West),1.3455,103.6806,Mid_temp
+Changi,1.3678,103.9826,Mid_temp
+Mari Barrage,1.2799,103.8703,Mid_temp
+Newton,1.3106,103.8365,Mid_temp
+Admiralty,1.4439,103.7854,Mid_temp
+Tai Seng,1.3399,103.8878,Mid_temp
+Khatib,1.4173,103.8249,Low_temp
+Clementi,1.3337,103.7768,Low_temp
+Pulau Ubin,1.4168,103.9673,Low_temp
+Sentosa Island,1.25,103.8279,Low_temp
+Tuas South,1.2938,103.6184,Low_temp
+Ang Mo Kio,1.3764,103.8492,Low_temp
+Mari Barrage,1.2799,103.8703,High_wind
+Tai Seng,1.3399,103.8878,High_wind
+Sentosa Island,1.25,103.8279,High_wind
+Tuas South,1.2938,103.6184,High_wind
+Pasir Panjang,1.281,103.754,High_wind
+Jurong Island,1.2542,103.6741,High_wind
+Paya Lebar,1.3524,103.9007,High_wind
+Changi,1.3678,103.9826,Mid_wind
+Admiralty,1.4439,103.7854,Mid_wind
+Khatib,1.4173,103.8249,Mid_wind
+Clementi,1.3337,103.7768,Mid_wind
+Ang Mo Kio,1.3764,103.8492,Mid_wind
+East Coast Parkway,1.3134,103.9619,Mid_wind
+Jurong (West),1.3455,103.6806,Low_wind
+Newton,1.3106,103.8365,Low_wind
+Pulau Ubin,1.4168,103.9673,Low_wind
+Tengah,1.3858,103.7114,Low_wind
+Sembawang,1.4252,103.8202,Low_wind
+Seletar,1.4166,103.8654,Low_wind

@@ -1,0 +1,234 @@
+---
+title: "Hypothesis Testing HTML"
+author: "Anton"
+date: "3/3/2020"
+output:
+  word_document: default
+  html_document: default
+---
+
+Set-up Libraries
+```{r include=FALSE}
+library(magrittr)
+library(lubridate)
+library(reshape)
+library(tidyverse)
+library(plyr)
+library(readr)
+library(readxl)
+library(car)
+library(psych)
+library(lsr)
+library(BSDA)
+library(PASWR)
+library(Rmisc)
+
+```
+
+Read/Upload Data
+```{r include=FALSE}
+F_D = read.csv("C:/Users/Anton/OneDrive - Singapore Management University/Python and R/R/R_Group_Project/Working_Data/Full_Climate_Data.csv")
+S_D = read.csv("C:/Users/Anton/OneDrive - Singapore Management University/Python and R/R/R_Group_Project/Working_Data/Singapore_Aggregate_Data.csv")
+```
+
+Examine/View Data
+```{r include=FALSE}
+# View(S_D)
+# View(F_D)
+```
+# Hypothesis_testing
+
+# Tempreture
+
+## Wrangle Tempreture data into chunks necessary for analysis
+Making subset for Mean_Tempreture date only
+```{r}
+F_T = S_D[,c(1,6)]
+# View(F_T)
+```
+
+Omit all N/A from Tempreture data
+```{r}
+F_T_O = na.omit(F_T)
+row.names(F_T_O) = NULL
+# View(F_T_O)
+```
+
+Make two subset for test
+```{r}
+T1 = F_T_O[1:6955,]
+# View(T1)
+```
+```{r}
+T2 = F_T_O[6956:13910,]
+# View(T2)
+```
+
+## Check for normality our Tempreture data
+```{r}
+shapiro.test(T1$Average.of.Mean_Temperature[1:5000])
+```
+The data is not normally distributed
+
+Vizulize distribition
+```{r}
+hist(T1$Average.of.Mean_Temperature, breaks = 250, col = "purple", main = "Singapore Mean Tempreture 1982-2001", xlab = "Mean tempreture")
+```
+```{r}
+shapiro.test(T2$Average.of.Mean_Temperature[1:5000])
+```
+For the second chunk the data distributed not normal either
+Vizulize distribition
+```{r}
+hist(T2$Average.of.Mean_Temperature, breaks = 270, col = "purple", main = "Singapore Mean Tempreture 2001-2020", xlab = "Mean tempreture")
+```
+
+## Run the non-parametrick paired test for Tempreture
+Now we need to use non-parametrick test to check either or not the data have same symmetrical distribution
+```{r}
+wilcox.test(T1$Average.of.Mean_Temperature,T2$Average.of.Mean_Temperature,paired = TRUE,alternative = "two.sided")
+```
+The distribution of t1 and t2 are significally different, that can account for climate change
+
+# Rainfall
+## Wrangle Data
+Making subset for Mean_Rainfall date only
+```{r}
+F_R = S_D[,c(1,2)]
+row.names(F_R) = NULL
+# View(F_R)
+```
+
+Check for N/A
+```{r}
+count(is.na(F_R))
+```
+
+Make two subset for test
+```{r}
+R1 = F_R[1:7320,]
+# View(R1)
+```
+```{r}
+R2 = F_R[7321:14640,]
+# View(R2)
+```
+
+## Check for normality our Rain data
+```{r}
+shapiro.test(R1$Average.of.Daily.Rainfall.Total..mm.[1:5000])
+```
+The data is not normally distributed
+```{r}
+hist(R1$Average.of.Daily.Rainfall.Total..mm., breaks = 250, col = "purple", main = "Singapore Mean Rainfall 1980-2000", xlab = "Mean Rainfall")
+```
+```{r}
+hist(log(R1$Average.of.Daily.Rainfall.Total..mm.), breaks = 250, col = "purple", main = "Singapore Log Mean Rainfall 1980-2000", xlab = "Log Mean Rainfall")
+```
+
+
+
+```{r}
+shapiro.test(R2$Average.of.Daily.Rainfall.Total..mm.[1:5000])
+```
+The data is not normally distributed
+```{r}
+hist(R2$Average.of.Daily.Rainfall.Total..mm., breaks = 250, col = "purple", main = "Singapore Mean Rainfall 2000-2020", xlab = "Mean Rainfall")
+```
+```{r}
+hist(log(R2$Average.of.Daily.Rainfall.Total..mm.), breaks = 250, col = "purple", main = "Singapore Log Mean Rainfall 2000-2020", xlab = "Log Mean Rainfall")
+```
+
+## Run the non-parametrick paired test for Rain
+Now we need to use non-parametrick test to check either or not the data have same symmetrical distribution
+```{r}
+wilcox.test(R1$Average.of.Daily.Rainfall.Total..mm.,R2$Average.of.Daily.Rainfall.Total..mm.,paired = TRUE,alternative = "two.sided")
+```
+The p-value is right on 1% level significance, we reject Ho. Rain distribution for 20 years are different, which account for climate change
+
+
+# Wind
+
+## Wrangle Wind data into chunks necessary for analysis
+Making subset for Mean_Tempreture date only
+```{r}
+F_W = S_D[,c(1,9)]
+# View(F_W)
+```
+
+Omit all N/A from Tempreture data
+```{r}
+F_W_O = na.omit(F_W)
+row.names(F_W_O) = NULL
+# View(F_W_O)
+```
+
+Make two subset for test
+```{r}
+W1 = F_W_O[1:7136,]
+# View(W1)
+```
+```{r}
+W2 = F_W_O[7137:14272,]
+# View(W2)
+```
+
+## Check for normality our Wind data
+```{r}
+shapiro.test(W1$Average.of.Mean.Wind.Speed..km.h.[1:5000])
+```
+The data distribution is not normal
+```{r}
+hist(W1$Average.of.Mean.Wind.Speed..km.h., breaks = 300, col = "purple", main = "Singapore Mean Wind 1981-2000", xlab = "Mean Wind")
+```
+
+```{r}
+shapiro.test(W2$Average.of.Mean.Wind.Speed..km.h.[1:5000])
+```
+The Data distributed not normall
+
+```{r}
+hist(W2$Average.of.Mean.Wind.Speed..km.h., breaks = 250, col = "purple", main = "Singapore Mean Wind 2000-2020", xlab = "Mean Wind")
+```
+
+## Run the non-parametrick paired test for Rain
+Now we need to use non-parametrick test to check either or not the data have same symmetrical distribution
+```{r}
+wilcox.test(W1$Average.of.Mean.Wind.Speed..km.h.,W2$Average.of.Mean.Wind.Speed..km.h.,paired = TRUE,alternative = "two.sided")
+```
+we reject Ho hence there is a change in wind distributions as well 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

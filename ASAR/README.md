@@ -1,0 +1,16 @@
+# Group Project - Singapore Climate Research
+## Project Idea: examine the data to see if there is evidence in Singapore for increased temperature and changes to rainfall patterns.
+### Introduction
+While there is some debate on whether climate change is real, it has emerged as a major concern this century. Climate changers claim that temperatures are on the increase globally with increasing variability and weather extremes such as increased mega storms,  heat waves, droughts, forest fires and flooding which have the potential to disrupt the global food chain. Climate changes claim that the polar caps and glaciers are melting, and this will contribute to rising sea levels and potentially imperil coastal communities, especially those least able to afford mitigation measures.
+Climate skeptics dispute that any of these is happening; that weather has always been variable and  will remain so indefinitely. Our research does not take sides in this debate and is limited purely to examining if there are indications of such change in Singapore. In the event climate change is indicated in Singapore, the intent of the research will not be to attribute causal factors for that change.
+Singapore has a hot humid tropical climate with limited seasonal variability apart from higher rainfall in some months, historically over the wet phase of the northeast monsoon, December to January. Singapore is a small country in a tropical region, variability of climate might be harder to detect other than changes in temperature and possibly rainfall. Fortunately, we have downloadable data going back 40 years which we can analyze for evidence of change.
+We examine the data to see if there is evidence in Singapore for increased temperature and changes to rainfall patterns. 
+### Data Source
+Download climate data fom 54 active stations located throughout Singapore and a code to parse through the data, taking care not to count missing data in the derivation of the composite dataset which will serve as our main dataset for the analysis.
+### R Shiny Application
+The R Shiny Application in split into four portions introduction, inferential , descriptive and forecasting. The introduction tab gives us an overview on the temperatures in the different regions in Singapore over the past 40 years using heat maps. The inferential tab shows the results of the hypothesis testing done. The descriptive tab shows how annual, mothly and daily temperatures, rainfall and windspeed have been changing over the past forty years. Finally, the forecasting tab then shows the forcasting results for annual rainfall, annual temperature and annual windspeed over the next 5 years
+
+### Summary/ Conclusion
+In conclusion the hypothesis testing done for rainfall, temperature and wind speed shows that distribution has changed from the first period (first 20 years) to the second period (next 20 years) has changed within the past 40 years. 
+
+The forecasting results for the next 5 years shows that annual temperature is in an upward trend, annual rainfall in a decreasing trend and annual windspeeds in an increasing trend. 
