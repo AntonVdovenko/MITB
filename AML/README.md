@@ -17,30 +17,66 @@ For revenue, profit and ROI, we tried various 4 methods of regression, namely Ri
 
 For classification, we have tried classic machine learning methods such as Logistic regression and SVC; we also used ensemble learning methods such as Bagging, Adaboost, HGBT and LGBT.
 ### Revenue-Regression results
-The Lasso and Ridge linear regression models test and train R^2 yields very similar results, which indicate that overfitting is not an issue. We also tried 2 ensemble learning models XGBT and HGBT, where HGBT is similarly to LGBT built in Sk-learn.  However, from the results of the R^2, it indicates that the model has an overfitting issue. 
+The Lasso and Ridge linear regression models test and train R^2 yields very similar results, which indicate that overfitting is not an issue. We also tried 2 ensemble learning models XGBT and HGBT, where HGBT is similarly to LGBT built in Sk-learn.  However, from the results of the R^2, it indicates that the model has an overfitting issue.
+
+
 ![fig_3](Figure_3.jpg)
-According to figure 4 below, budget plays the most important factor in determining predicted revenue, followed by the median movie revenue of the top 3 cast. 
+
+
+According to figure 4 below, budget plays the most important factor in determining predicted revenue, followed by the median movie revenue of the top 3 cast.
+
+
 ![fig_4](Figure_4.jpg)
+
+
 ### Profit-Regression results
 Similar to the revenue model, the lasso and ridge linear regressors yield similar results. The XGBT and HGBT ensemble learning regressor models also yielded pretty similar results. The ensemble learning models also displayed overfitting issues for profit. However, the R^2 for all 4 models is in the 40 percent range.
+
+
 ![fig_5](Figure_5.jpg)
+
+
 Figure 6 shows the high negative coefficient awarded to budget shows that though budget positively affects revenue prediction, it has the opposite effect for profits, where it seems to negatively affect profits.
+
+
 ![fig_6](Figure_6.jpg)
+
+
 
 ### ROI-Regression results
 Our initial model that we ran gave us an R^2 of 0.00. However, we found that it was because of an outlier and after removing that outlier, subsequent regression results show that linear regression models such as Ridge and Lasso performs poorly compared to the ensemble learning models. Nevertheless, the model is still lacking and additional feature engineering or additional features would have to be added as the best test R^2 of 0.56 means that our model is only able to account for 56% of the variation, and is thus not satisfactory for the purpose of helping investors predict their ROI.
+
+
 ![fig_7](Figure_7.jpg)
+
+
 The result of feature analysis is quite similar with profit regressor. From figure 8, we can observe that the feature for horror genre is in the top ten features. This could indicate that many horror films are low-cost but have higher box office sales and thus returns a higher ROI than movies of other genres.
+
+
 ![fig_8](Figure_8.jpg)
+
+
 ### Classification results
 With our current features, we are only able to explain revenue to a satisfactory extent, as we are unable to come up with models that can predict profits and ROI, we have classified a movie to be successful if its box office revenue reaches or exceeds 300% of the movie’s budget. This 300% of budget mark signifies the breakeven point after lessing off all the profit sharing, distribution fees and taxes.
 Definition of movie success: 1*(1-0.033-0.05)(1-0.1)(1-0.6) = 0.33
 Based on Figure 9, we can see that the LGBT and HGBT are the two models which have the highest accuracy precision, recall, F1-score and AUCs.
+
+
 ![fig_9](Figure_9.jpg)
+
+
 Based on Figure 10, we can see that LGBT is the slightly better model to use as the AUC under the ROC for LGBT model is slightly higher for the LGBT model.
+
+
 ![fig_10](Figure_10.jpg)
+
+
 From Figure 11, we observe that the top 3 features for revenue regression, which are budget, top3 cast median revenue and director median revenue are also the 3 most important features when classifying whether the movie is a success or a failure. The length of the movie (runtime), number of casts (cast_count), director popularity(director_median_vote), how often the movie gets searched 150 days before release date(trend_average), number of production companies (company_count), whether any of the cast has received an award before(awardedcast), and number of countries the movie has been released in(country_count) are the top 10 most important features for the LGBT classification model.
+
+
 ![feature_importance](Feature_Importance.jpg)
+
+
 ### Limitations and Future Work
 - The key limitation of our dataset is the size of available data which can be used for analysis. Though we started off with a dataset of 45k movies, most of them do not have revenue and budget information, which are used to calculate ROI, revenue and profit and thus cannot be used for our dataset.
 
