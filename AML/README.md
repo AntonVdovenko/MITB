@@ -3,7 +3,14 @@
 ### Data
 The main dataset includes 45K movies with the metadata and credits about the movie from 1920s to 2015
 ### Feature Importance
-![feature_importance](Feature_Importnace.jpg)
+
+
+
+![feature_importance](Feature_Importance.jpg)
+
+
+
+
 ### Limitations
 - Usable dataset size less than 5k, a lot of movies have 0 budget or 0 revenue
 - Google trends data for each country is different, showing that some movies are searched more in certain countries
