@@ -1,4 +1,4 @@
-# Repository with coding projects which were made during MITB program 
+# Repository with coding projects which were made during MITB program by courses
 [id1]: https://github.com/AntonVdovenko/MITB/tree/master/AML
 [id2]: https://github.com/AntonVdovenko/MITB/tree/master/ASAR
 [id3]: https://github.com/AntonVdovenko/MITB/tree/master/VIZ
