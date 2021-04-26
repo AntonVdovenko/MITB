@@ -5,3 +5,5 @@
 ## [AML][id1] - Applied Machine Learning
 ## [ASAR][id2] - Applied Statistical Analysis with R
 ## [VIZ][id3] - Visual Analytics and Applications
+
+## Cheking
